@@ -19,10 +19,12 @@ class NotaFiscal(BaseModel):
     emitente_nome: str
     emitente_cnpj: str
     emitente_uf: str
-    
+    emitente_contato: Optional[str] = None
+
     # Destinatário
     destinatario_nome: str
     destinatario_cnpj_cpf: str
+    destinatario_contato: Optional[str] = None
     
     # Valores
     valor_produtos: float
