@@ -23,7 +23,7 @@ class NotaFiscal(BaseModel):
 
     # Destinatário
     destinatario_nome: str
-    destinatario_cnpj_cpf: str
+    destinatario_cnpj_cpf: Optional[str] = Field(None, description="CNPJ ou CPF do destinatário. Deixar null se não estiver presente no documento.")
     destinatario_contato: Optional[str] = None
     
     # Valores
