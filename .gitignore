@@ -1,0 +1,6 @@
+.env
+__pycache__
+notas/
+dados_extraidos/
+.venv
+venv
