@@ -1,7 +1,7 @@
 # Extrator dos textos das NFe
 import pdfplumber
 from openai import OpenAI
-from models import NotaFiscal
+from app.models import NotaFiscal
 import json
 import os
 from dotenv import load_dotenv
